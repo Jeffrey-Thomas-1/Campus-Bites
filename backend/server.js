@@ -25,6 +25,10 @@ const pool = mysql.createPool({
 
 app.use(cors());
 app.use(express.json());
+app.use((req, _res, next) => {
+  if (!req.url.startsWith("/api")) req.url = `/api${req.url}`;
+  next();
+});
 
 app.get("/api/health", async (_req, res) => {
   try {
@@ -90,4 +94,8 @@ app.post("/api/auth/login", async (req, res) => {
   }
 });
 
-app.listen(port, () => console.log(`Campus Bites API running at http://localhost:${port}`));
+if (!process.env.VERCEL) {
+  app.listen(port, () => console.log(`Campus Bites API running at http://localhost:${port}`));
+}
+
+export default app;

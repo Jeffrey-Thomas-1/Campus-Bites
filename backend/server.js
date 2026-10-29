@@ -84,7 +84,7 @@ app.post("/api/auth/login", async (req, res) => {
       [email.trim().toLowerCase()]
     );
     const user = rows[0];
-    if (!user || !(await bcrypt.compare(password, user.password_hash))) {
+    if (!user || typeof user.password_hash !== "string" || !(await bcrypt.compare(password, user.password_hash))) {
       return res.status(401).json({ message: "Invalid email or password" });
     }
     const token = jwt.sign({ userId: user.user_id, role: user.role }, jwtSecret, { expiresIn: "2h" });

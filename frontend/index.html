@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f8f5f0" />
+    <title>Campus Bites | Skip the Queue. Savor the Break.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .field-error{display:none;color:#b3483f;font-size:10px;font-weight:600;margin-top:-8px}.invalid{border-color:#b3483f!important;outline:2px solid #b3483f33}.signup-only.hidden,.login-only.hidden{display:none}.veg:before{display:none}.footer-location{margin-top:13px;color:#b4a699}.footer-location a{display:inline-block;margin-top:4px;color:#f3e8dc}.footer-location a:hover{color:#d5a577}.payment-note{display:flex;align-items:center;gap:12px;background:#f1e6d8;border:1px solid #dfcfbd;border-radius:8px;margin:28px 0 24px;padding:12px 16px;color:#6b5543}.payment-note span{display:grid;place-items:center;width:25px;height:25px;border-radius:50%;background:#c79b70;color:#fff;font-size:14px}.payment-note p{margin:0;font-size:11px;line-height:1.5}.payment-note strong{display:block;color:#4a392e;font-size:12px;margin-bottom:2px}
+      .orders-modal{width:min(720px,100%);max-height:85vh;overflow:auto;padding:35px}.orders-modal h2{font-size:38px;margin:8px 0 25px}.order-card{border:1px solid var(--line);border-radius:8px;padding:17px;margin-top:12px;background:#fff}.order-card-head{display:flex;justify-content:space-between;gap:15px}.order-card h3{margin:0;font-size:14px}.order-status{font-size:10px;font-weight:700;border-radius:20px;padding:6px 9px}.order-status.preparing{background:#f5e5c9;color:#9a681e}.order-status.ready{background:#e2f0e2;color:#4f7656}.order-items{color:var(--muted);font-size:11px;line-height:1.6;margin:11px 0}.order-meta{display:flex;justify-content:space-between;color:var(--muted);font-size:10px}.empty-orders{text-align:center;color:var(--muted);font-size:13px;padding:30px}
+      .profile-trigger{display:flex;align-items:center;gap:9px;background:none;color:var(--dark);font-size:12px}.profile-chevron{color:var(--muted);font-size:15px}.profile-menu{position:absolute;right:5vw;top:61px;min-width:145px;background:var(--paper);border:1px solid var(--line);border-radius:8px;box-shadow:0 10px 24px #49352525;padding:6px;z-index:5}.profile-menu button{display:block;width:100%;text-align:left;background:none;border-radius:5px;padding:10px 12px;color:var(--dark);font-size:12px}.profile-menu button:hover{background:var(--beige);color:var(--brown)}.dash-user{position:relative}
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" data-action="home"><span class="brand-mark">✦</span><span>Campus<span> Bites</span></span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#about">About us</a><a href="#menu-highlights">Menu</a><a href="#how-it-works">How it works</a><a href="#contact">Contact</a>
+      </nav>
+      <button class="button button-dark header-login" data-action="login">Log in <span>↗</span></button>
+      <button class="menu-toggle" aria-label="Open menu">☰</button>
+    </header>
+
+    <main id="app">
+      <section class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="live-dot"></span> Your campus, now a little tastier</div>
+          <h1>Skip the queue.<br /><em>Savor the break.</em></h1>
+          <p>Your favorite campus meals, just a few clicks away. Pre-order your food, track your order, and pick it up fresh when it’s ready.</p>
+          <div class="hero-actions"><button class="button button-dark" data-action="login">Explore the menu <span>↗</span></button><button class="text-button" data-action="login">Pre-order now <span>→</span></button></div>
+          <div class="hero-note"><div class="avatar-stack"><span>JD</span><span>AK</span><span>MS</span><span>+</span></div><span><strong>2,000+</strong> students ordering happier</span></div>
+        </div>
+        <div class="hero-visual">
+          <div class="sun-shape"></div><div class="hero-image"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=85" alt="Fresh grain bowl with vegetables" /></div>
+          <div class="floating-card order-card"><span class="status-icon">✓</span><div><small>ORDER #CB-2048</small><strong>Ready for pickup</strong></div><span class="mini-arrow">↗</span></div>
+          <div class="floating-card time-card"><span class="clock">◷</span><div><small>AVERAGE PREP TIME</small><strong>15 minutes</strong></div></div>
+          <div class="scribble">good food<br /><span>good mood</span> <b>♥</b></div>
+        </div>
+      </section>
+
+      <section class="stats section-narrow">
+        <div><strong>500<span>+</span></strong><small>Daily orders</small></div><div><strong>60<span>+</span></strong><small>Menu items</small></div><div><strong>2k<span>+</span></strong><small>Happy students</small></div><div><strong>15<span>m</span></strong><small>Avg. prep time</small></div>
+      </section>
+
+      <section id="about" class="about-section section-narrow">
+        <div class="section-label">WHY CAMPUS BITES</div><div class="about-heading"><h2>Your campus food experience,<br /><em>made better.</em></h2><p>No more long lines or rushed lunches. Campus Bites puts your canteen in your pocket, so you can spend less time waiting and more time enjoying your break.</p></div>
+        <div class="feature-grid"><article><div class="feature-icon">↗</div><h3>Quick pre-ordering</h3><p>Order your favorite meals before you even reach the canteen.</p></article><article><div class="feature-icon">◷</div><h3>Real-time tracking</h3><p>Know exactly when your food is being prepared and when it’s ready.</p></article><article><div class="feature-icon">♧</div><h3>Easy pickup</h3><p>Walk straight to the pickup counter and get on with your day.</p></article></div>
+      </section>
+
+      <section id="menu-highlights" class="menu-section">
+        <div class="section-narrow"><div class="section-top"><div><div class="section-label">FROM THE COUNTER</div><h2>Today’s <em>favorites.</em></h2></div><button class="outline-button" data-action="login">View full menu <span>→</span></button></div><div id="highlight-grid" class="highlight-grid"></div></div>
+      </section>
+
+    </main>
+
+    <footer id="contact"><div class="footer-inner section-narrow"><a class="brand brand-light" href="#"><span class="brand-mark">✦</span><span>Campus<span> Bites</span></span></a><p>Made for your breaks.<br />Loved by your campus.</p><div class="footer-links"><a href="#about">About us</a><a href="#menu-highlights">Menu</a><a href="#contact">Contact</a><a href="#">Privacy</a></div><div class="footer-contact">MON – FRI · 8:00 AM – 6:00 PM<br /><strong>hello@campusbites.edu</strong><div class="footer-location">⌖ Student Center, Main Campus<br /><a href="https://www.google.com/maps/search/?api=1&query=Student+Center+Main+Campus" target="_blank" rel="noopener noreferrer">Get directions ↗</a></div></div></div><div class="copyright section-narrow">© 2024 Campus Bites <span>Built for better breaks</span></div></footer>
+
+    <div id="auth-modal" class="modal-backdrop hidden"><div class="modal auth-modal"><button class="close" data-action="close-modal">×</button><div class="auth-pitch"><div class="brand brand-light"><span class="brand-mark">✦</span><span>Campus<span> Bites</span></span></div><h2>Good food.<br /><em>Good breaks.</em></h2><p>Join 2,000+ students making their lunch hour count.</p></div><form id="auth-form" class="auth-form"><div class="eyebrow" id="auth-eyebrow">WELCOME BACK</div><h2 id="auth-title">Log in to your account</h2><p class="form-subtitle">Your next delicious meal is just a few clicks away.</p><label id="name-field" class="signup-only hidden">Name<input id="name-input" type="text" placeholder="Your full name" /></label><label>Email address<input id="email-input" type="email" placeholder="you@college.edu" required /></label><label>Password<div class="password-input"><input id="password-input" type="password" placeholder="More than 8 characters and 1 number" required /><button type="button" class="show-password">Show</button></div></label><label id="confirm-field" class="signup-only hidden">Confirm password<div class="password-input"><input id="confirm-password-input" type="password" placeholder="Re-enter your password" /><button type="button" class="show-password">Show</button></div><small id="password-error" class="field-error">Passwords must match.</small></label><div class="form-row login-only"><label class="checkbox"><input type="checkbox" /> Remember me</label><a href="#">Forgot password?</a></div><button class="button button-dark full-width" type="submit">Continue <span>↗</span></button><p class="switch-auth"><span id="switch-copy">New to Campus Bites?</span> <button type="button" id="switch-auth">Create an account</button></p></form></div></div>
+
+    <section id="dashboard" class="dashboard hidden"><header class="dash-header"><a class="brand" href="#" data-action="logout"><span class="brand-mark">✦</span><span>Campus<span> Bites</span></span></a><nav><button class="active">Browse menu</button><button id="orders-nav">My orders <span id="orders-count" class="notification hidden">0</span></button></nav><div class="dash-user"><button id="profile-trigger" class="profile-trigger" aria-expanded="false"><span class="user-avatar" id="user-avatar">CB</span><span id="user-name">Student</span><span class="profile-chevron">⌄</span></button><div id="profile-menu" class="profile-menu hidden"><button data-action="logout">Log out</button></div></div></header><div class="dashboard-content"><div class="dash-welcome"><div><h1>Good morning, <span id="welcome-name">there</span> <span>✦</span></h1><p id="welcome-email">What are you craving today?</p></div><button id="cart-button" class="cart-button">Cart <span id="cart-count">0</span> <b>→</b></button></div><div class="payment-note"><span>♡</span><p><strong>A small note for your next bite</strong> For now, we’re accepting cash payments at pickup only. Online payments are coming soon.</p></div><div class="dashboard-tools"><div class="search-box">⌕<input id="search-input" placeholder="Search for food, snacks, or beverages..." /></div><div id="categories" class="categories"></div><select id="sort-select"><option value="popular">Popular items</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="alpha">Alphabetical</option></select></div><div id="menu-grid" class="menu-grid"></div></div></section>
+    <div id="cart-drawer" class="drawer-backdrop hidden"><aside class="cart-drawer"><button class="close" data-action="close-cart">×</button><div class="drawer-title"><div class="eyebrow">YOUR ORDER</div><h2>Your <em>cart.</em></h2></div><div id="cart-items"></div><div class="cart-summary"><div><span>Subtotal</span><strong id="cart-total">₹0</strong></div><small>Pickup at the counter · Pay at canteen</small><button id="checkout-button" class="button button-dark full-width">Place pre-order <span>↗</span></button></div></aside></div>
+    <div id="orders-modal" class="modal-backdrop hidden"><section class="modal orders-modal"><button class="close" data-action="close-orders">×</button><div class="eyebrow">ORDER HISTORY</div><h2>Your <em>orders.</em></h2><div id="orders-list"></div></section></div>
+    <div id="toast" class="toast"></div>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "campus-bites-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Campus Bites college canteen pre-order experience",
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.1.0"
+  }
+}
